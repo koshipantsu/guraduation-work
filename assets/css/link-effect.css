@@ -1,0 +1,398 @@
+/*aタグ全体*/
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+/*メインメニュー*/
+.main-menu--home a{
+  display: inline-block;
+  margin-top: 10%;
+}
+
+.header__main-menu a:after{
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.main-menu--home a:hover::after{
+  position: absolute;
+  content: "home";
+  margin-left: 10px;
+  opacity: 1;
+  }
+
+
+.main-menu--about a:hover::after{
+  position: absolute;
+  content: "about";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--circle a:hover::after{
+  position: absolute;
+  content: "circle";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--triangle a:hover::after{
+  position: absolute;
+  content: "triangle";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--square a:hover::after{
+  position: absolute;
+  content: "square";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--function a:hover::after{
+  position: absolute;
+  content: "function";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--chances a:hover::after{
+  position: absolute;
+  content: "chances";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--twitter a:hover::after{
+  position: absolute;
+  content: "twitter";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--line a:hover::after{
+  position: absolute;
+  content: "line";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.main-menu--facebook a:hover::after{
+  position: absolute;
+  content: "facebook";
+  margin-left: 10px;
+  opacity: 1;
+}
+
+/*ページ遷移のときのbackボタン*/
+.modal-content a{
+	position: relative;
+	display: inline-block;
+	transition: .3s;
+}
+
+.modal-content a::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #000;
+	transition: .3s;
+}
+
+.modal-content a:hover::after {
+	width: 100%;
+}
+
+/*三角*/
+.triangle__pythagorean-theorem--btn{
+  width: 30%;
+  float: left;
+  position: relative;
+  margin-top: 15%;
+  margin-left: 20%;
+  cursor: pointer;
+  overflow:hidden;
+}
+
+.triangle__pythagorean-theorem--btn a{
+  width:150px;
+  height:40px;
+  float: left;
+  position: relative;
+  border:1px solid #000;
+  text-align:center;
+  color:#000;
+  text-decoration:none;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+  padding-top: 10px;
+  box-sizing:border-box;
+}
+
+.eff-4{
+  width:150px;
+  height:40px;
+  left:-150px;
+  top: 0px;
+  right: 100%;
+  background: #000;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.triangle__pythagorean-theorem--btn:hover .eff-4{
+  left:0;
+}
+
+.triangle__pythagorean-theorem--btn:hover a{
+  color:#fff;
+}
+/**/
+.triangle__trigonometric-function--btn{
+  width: 32%;
+  float: right;
+  position: relative;
+  margin-top: 18%;
+  cursor: pointer;
+  overflow:hidden;
+}
+
+.triangle__trigonometric-function--btn a{
+  width:150px;
+  height:40px;
+  float: left;
+  position: relative;
+  border:1px solid #000;
+  text-align:center;
+  color:#000;
+  text-decoration:none;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+  padding-top: 10px;
+  box-sizing:border-box;
+}
+
+.eff-5{
+  width:150px;
+  height:40px;
+  left:-150px;
+  top: 0px;
+  background: #000;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.triangle__trigonometric-function--btn:hover .eff-5{
+  left:0;
+}
+
+.triangle__trigonometric-function--btn:hover a{
+  color:#fff;
+}
+
+
+/*関数*/
+#about__function a{
+	padding: 0 .3em;
+	background-image: linear-gradient(to right, rgba(0,0,0,0) 51%, #000 51%);
+	background-position: 0 0;
+	background-size: 200% auto;
+	transition: .3s;
+}
+
+#about__function a:hover {
+	background-position: -100% 0;
+	color: #fff;
+}
+
+/*確率*/
+.chances__menu--chances{
+  width: 150px;
+  height: 40px;
+  float: left;
+  position: relative;
+  border:1px solid #000;
+  padding-top: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: -19px;
+  margin-left: -1px;
+}
+
+.chances__menu--chances a{
+  color:#000;
+  text-decoration:none;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.eff-6{
+  width:150px;
+  height:40px;
+  left:-150px;
+  top: 0px;
+  background: #000;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.chances__menu--chances:hover .eff-6{
+  left:0;
+}
+
+.chances__menu--chances:hover a{
+  color:#fff;
+}
+/**/
+.chances__mune--permutation{
+  width:150px;
+  height:40px;
+  float: left;
+  position: relative;
+  border:1px solid #000;
+  padding-top: 10px;
+  text-align:center;
+  box-sizing:border-box;
+  overflow:hidden;
+  cursor: pointer;
+  margin-top: -19px;
+  margin-left: -1px;
+}
+
+.chances__mune--permutation a{
+  color:#000;
+  text-decoration:none;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.eff-7{
+  width:150px;
+  height:40px;
+  left:-150px;
+  top: 0px;
+  background: #000;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.chances__mune--permutation:hover .eff-7{
+  left:0;
+}
+
+.chances__mune--permutation:hover a{
+  color:#fff;
+}
+/**/
+
+.chances__mune--combination{
+  width:150px;
+  height:40px;
+  float: left;
+  position: relative;
+  border:1px solid #000;
+  padding-top: 10px;
+  text-align:center;
+  box-sizing:border-box;
+  overflow:hidden;
+  cursor: pointer;
+  margin-top: -19px;
+  margin-left: -1px;
+}
+
+.chances__mune--combination a{
+  color:#000;
+  text-decoration:none;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+
+.eff-8{
+  width:150px;
+  height:40px;
+  left:-150px;
+  top: 0px;
+  background: #000;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+
+.chances__mune--combination:hover .eff-8{
+  left:0;
+}
+
+.chances__mune--combination:hover a{
+  color:#fff;
+}
+
+/*フッター*/
+.footer__menu a{
+	position: relative;
+	display: inline-block;
+  color: #fff;
+	transition: .3s;
+}
+
+.footer__menu a::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #fff;
+	transition: .3s;
+}
+
+.footer__menu a:hover::after {
+	width: 100%;
+}
+
+.information a{
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+.information a:hover {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.footer__enquiry {
+	background-color: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+  padding-top: 12px;
+}
+
+.footer__enquiry:hover {
+	background-color: rgba(255, 255, 255, .2);
+}

@@ -1,0 +1,37 @@
+/*文字サイズ*/
+.font-size__over{
+  font-size: 3em;
+}
+
+.font-size__max{
+  font-size: 1.5em;
+}
+
+.font-size__middle{
+  font-size: 1.2em;
+}
+
+.font-size__normal{
+  font-size: 1em;
+}
+
+.font-size__medium{
+  font-size: 0.9em;
+}
+
+.font-size__small{
+  font-size: 0.7em;
+}
+
+.font-size__min{
+  font-size: 0.2em;
+}
+
+/*文字間*/
+.letter-space__max{
+  letter-spacing: 0.5em;
+}
+
+.letter-space__medium{
+  letter-spacing: 0.2em;
+}

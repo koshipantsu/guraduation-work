@@ -1,0 +1,110 @@
+/* smartPhone */
+@media screen and (max-width: 640px){
+  .hero__sp{
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  perspective: 200px;
+    -webkit-perspective: 200px;
+}
+
+.cube__sp {
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: 50vh auto;
+  background: red;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.surface {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: calc(-200px / 2);
+  left: calc(-200px / 2);
+  right: calc(-200px / 2);
+  bottom: calc(-200px / 2);
+  text-align: center;
+}
+
+/* 面個別CSS */
+  .cube__top{
+    background: #81d1e9;
+    color: #fff;
+    transform:
+      rotateY(0deg) translateZ(100px);
+      -webkit-transform:
+      rotateY(0deg) translateZ(100px);
+  }
+
+  .cube__right{
+    background: #fd8c8d;
+    color: #fff;
+    transform:
+     rotateY(-90deg) translateZ(100px);
+    -webkit-transform:
+     rotateY(-90deg) translateZ(100px);
+
+  }
+
+  .cube__left{
+    background: #f1de00;
+    color: #fff;
+    transform:
+    rotateX(90deg) translateZ(100px);
+  -webkit-transform:
+  rotateX(90deg) translateZ(100px);
+
+  }
+
+  .cube__right-back{
+    background: #fd8c8d;
+    color: #fff;
+    transform:
+    rotateY(90deg) translateZ(100px);
+    -webkit-transform:
+    rotateY(90deg) translateZ(100px);
+
+  }
+
+  .cube__left-back{
+    background: #f1de00;
+    color: #fff;
+    transform:
+      rotateX(-90deg) translateZ(100px);
+    -webkit-transform:
+      rotateX(-90deg) translateZ(100px);
+  }
+
+  .cube__bottom{
+    background: #81d1e9;
+    color: #fff;
+    transform:
+      rotateX(180deg) translateZ(100px);
+    -webkit-transform:
+      rotateX(180deg) translateZ(100px);
+
+  }
+
+
+/* アニメーション */
+.cube__sp {
+  animation: rotation 5s linear 0s infinite normal;
+  -webkit-animation: rotation 5s linear 0s infinite normal;
+}
+
+/* キーフレーム */
+@keyframes rotation{
+    100%{
+    transform:
+      rotateX(360deg) rotateY(360deg) ;
+  }
+}
+@-webkit-keyframes rotation{
+    100%{
+    -webkit-transform:
+      rotateX(360deg) rotateY(360deg) ;
+  }
+}
+}

@@ -1,0 +1,506 @@
+body{
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Yu Gothic", YuGothic;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+  /*display: inline-block;*/
+}
+
+.hide__pc{
+  display: none;
+}
+
+.header{
+  width: 5%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+}
+
+.header__main-menu{
+  height: 100vh;
+}
+
+.header__main-menu li{
+  display: inline-block;
+}
+
+.main-menu__icons{
+  width: 13px;
+}
+
+.main-menu--home{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--search{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--about{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--circle{
+  width: 100%;
+  margin-top: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--triangle{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--square{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--function{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--chances{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -3%;
+}
+
+.main-menu--twitter{
+  width: 100%;
+  margin-top: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--line{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-menu--facebook{
+  width: 100%;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.hero__top{
+  width: 100%;
+  float: right;
+}
+
+#hero:after{
+  clear: both;
+}
+
+#about{
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+.about__title span{
+  opacity: 0;
+}
+
+.about__title{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.about__contents{
+  float: left;
+  width: 100%;
+  margin-top: 5%;
+}
+.about__move--contents{
+  float: left;
+  width: 20%;
+  margin-left: 22%;
+}
+
+.about__study--contents{
+  float: left;
+  width: 20%;
+  margin-left: 16%;
+}
+
+#about::after{
+  clear: both;
+}
+
+#about__circle{
+  width: 100%;
+  height: 100vh;
+  float: left;
+  /*background: red;*/
+}
+
+.circle__symbol{
+  float: left;
+  width: 1px;
+  height: 1px;
+  top: 50%;
+  left: 10%;
+  position: relative;
+  /*background: yellow;*/
+}
+
+.circle__symbol--bg{
+  position: absolute;
+  top: 150px;
+  left: -175px;
+}
+
+.circle__menu img{
+  width: 100px;
+}
+
+.circle__menu--top{
+  position: absolute;
+  top: 0px;
+  left: -50px;
+}
+
+.circle__menu--about-circle{
+  position: absolute;
+  top: 80px;
+  left: 130px;
+}
+
+.theorem-of-circumferential-angle{
+  position: absolute;
+  top: 270px;
+  left: 200px;
+}
+
+.alternate-segment-theorem{
+  position: absolute;
+  top: 450px;
+  left: 130px;
+}
+
+.circle__menu--bottom{
+  position: absolute;
+  top: 525px;
+  left: -50px;
+}
+
+.circle__contents{
+  float: right;
+  width: 30%;
+  height: 100vh;
+  margin-right: 10%;
+  position: relative;
+}
+
+.circle__title{
+  width: 100%;
+  text-align: right;
+  float: right;
+  top: 45%;
+  position: absolute;
+}
+
+.circle__text{
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  top: 50%;
+}
+
+#about__triangle{
+  width: 100%;
+  height: 100vh;
+  float: left;
+}
+
+.trinagle__img{
+  position: relative;
+}
+
+.triangle__bg{
+  width: 50%;
+  margin-top: 100px;
+  margin-left: 25%;
+  position: absolute;
+  z-index: 1;
+}
+
+.triangle__menu{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.triangle__contents{
+  position: absolute;
+  z-index: 3;
+  width: 20%;
+  margin-top: 35%;
+  right: 20%;
+}
+
+#triangle::after{
+  clear: both;
+}
+
+#about__square{
+  width: 100%;
+  height: 100vh;
+  float: left;
+}
+
+.square__contents{
+  width: 100%;
+  height: 33vh;
+  border: 1px solid #f1de00;
+  margin: 15% 0;
+  float: left;
+}
+
+.square__symbol{
+  float: left;
+  height: 140%;
+  margin-top: -83px;
+  margin-left: 20%;
+}
+
+.square__coment{
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 10vh;
+}
+
+#about__square::after{
+  position: static;
+  clear: both;
+}
+
+#about__function{
+  float: left;
+  width: 90%;
+  height: 100vh;
+  margin-left: 10%;
+}
+
+#about__function li{
+  display: inline-block;
+}
+
+.function__contents{
+  margin-top: 18%;
+}
+
+.content__dital--before{
+  text-align: center;
+}
+
+.function__line{
+  margin-top: 5%;
+}
+
+.function__line::before{
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin-left: 10%;
+  margin-top: 37px;
+  background-color: black;
+}
+
+.function__line::after{
+  content:"";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: black;
+  margin-left: 10%;
+}
+
+.contents__function{
+  margin-left: 30%;
+}
+
+.contents__function::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background: black;
+  margin-top: 35px;
+  margin-left: -20px;
+}
+
+.contents__differential{
+  margin-left: 25%;
+}
+
+.contents__differential::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background: black;
+  margin-top: 35px;
+  margin-left: -50px;
+}
+
+.contents__integral{
+  margin-left: 30%;
+}
+
+.contents__integral::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background: black;
+  margin-top: 24px;
+  margin-left: -22px;
+}
+
+.content__dital--after{
+  text-align: center;
+  margin-top: 10%;
+}
+
+#about__chances{
+  float: left;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+}
+
+.chances__contents{
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.chances__menu{
+  width: 447px;
+  height: 35px;
+  border: 3px solid #000;
+}
+
+.chances__menu li{
+  display: inline-block;
+}
+
+.chances__contents--info{
+  margin-top: 4%;
+}
+
+.about__chances--bg{
+  width: 100%;
+}
+
+#about__chances:after{
+  clear: both;
+}
+
+#about__footer{
+  float: left;
+  width: 100%;
+  height: 100vh;
+}
+
+.about__left--contents{
+  float: left;
+  width: 25%;
+  margin-left: 10%;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.about__footer--title{
+  float: left;
+  width: 30%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.about__right--contents{
+  float: left;
+  width: 25%;
+  margin-top: 20%;
+  text-align: center;
+}
+
+#footer{
+  float: left;
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  background: #898989;
+}
+
+.footer__menu{
+  float: left;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+
+.footer__menu li{
+  margin-left: 3%;
+  display: inline-block;
+}
+
+.footer__enquiry{
+  float: right;
+  width: 150px;
+  height: 30px;
+  margin-top: -5%;
+  margin-right: 10%;
+  padding-top: 10px;
+  margin-left: 75%;
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 230px;
+  color: #fff;
+}
