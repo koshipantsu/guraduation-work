@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="assets/css/logo.css">
   <link rel="stylesheet" href="assets/css/hero_sp.css">
   <link rel="stylesheet" href="assets/css/modal.css">
-  <!-- <link rel="stylesheet" href="assets/css/common.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/normalize.css"> -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
   <script src="assets/js/jquery-3.1.0.min.js"></script>
   <script src="assets/js/jquery.inview.js"></script>
   <script src="assets/js/jquery.inview.min.js"></script>
@@ -84,11 +84,11 @@
     <h1 class="about__title font-size__middle letter-space__max hide">
       <span>勉強を日常と関連づけたアニメーションで学ぶ</span></h1>
 
-      <div class="about__contents hide">
-        <p class="about__move--contents font-size__small letter-space__max">
+      <div class="about__contents hide font-saize__middle--small letter-space__medium">
+        <p class="about__move--contents">
           アニメーションの動きを使って問題の解答まで導くということをコンセプトに教科書のような文字での情報ではなく、視覚的な情報でより強く印象付けることが目的。</p>
 
-        <p class="about__study--contents font-size__small letter-space__max">
+        <p class="about__study--contents">
           文字だけでは伝わりにくいことを動きをつけることで、わかりにくかった部分をよりわかりやすく、より明快に。</p>
         </div>
         </section>
@@ -130,11 +130,13 @@
   </div>
 
   <!-- modal-test -->
-  <!-- 1つ目のコンテンツ [開始] -->
+  <!-- 円についての解説 -->
 <div id="modal-content-01" class="modal-content hide">
   <!-- モーダルウィンドウのコンテンツ開始 -->
   <h1>美しい円</h1>
-  <img src="">
+  <p>平面上の点Oから距離の等しい小さな点の集合でできる曲線のこと。</p>
+  <img src="assets/images/circle.svg">
+
   <div>
     <a id="modal-close" class="button-link font-size__min letter-space__medium">
       BACK</a>
@@ -143,7 +145,7 @@
 </div>
 <!-- 1つ目のコンテンツ [終了] -->
 
-  <!-- 2つ目のコンテンツ [開始] -->
+  <!-- 円周角の定理 -->
   <div id="modal-content-02" class="modal-content hide">
   	<!-- モーダルウィンドウのコンテンツ開始 -->
   	<h1>円周角の定理</h1>
@@ -153,7 +155,7 @@
   </div>
   <!-- 2つ目のコンテンツ [終了] -->
 
-  <!-- 3つ目のコンテンツ [開始] -->
+  <!-- 接弦の定理 -->
   <div id="modal-content-03" class="modal-content hide">
   	<!-- モーダルウィンドウのコンテンツ開始 -->
     <h1>接弦の定理</h1>
@@ -167,8 +169,9 @@
 
   <section id="about__triangle">
     <div class="triangle__img hide">
-      <img class="triangle__bg" src="assets/images/triangle-bg.png">
+      <img class="triangle__bg" src="assets/images/triangle-bg.svg">
       <div class="triangle__menu">
+
       <div class="triangle__pythagorean-theorem--btn">
           <div class="eff-4 hide"></div>
           <a class="triangle__pythagorean-theorem font-size__small letter-space__medium modal-syncer" data-target="modal-content-04">三角関数</a>
@@ -176,7 +179,7 @@
 
         <div class="triangle__trigonometric-function--btn">
             <div class="eff-5 hide"></div>
-            <a class="triangle__trigonometric-function font-size__small letter-space__medium" href="#triangle__link--about">三角関数のこと</a>
+            <a class="triangle__pythagorean-theorem font-size__small letter-space__medium modal-syncer" data-target="modal-content-05">三角関数について</a>
           </div>
         </div>
     </div>
@@ -193,14 +196,26 @@
           １列に並んでいない3つの点と、その3つを結んでできた形。</p>
       </div>
 
-      <!-- 4つ目のコンテンツ [開始] -->
+      <!-- 三角関数 -->
       <div id="modal-content-04" class="modal-content hide">
         <!-- モーダルウィンドウのコンテンツ開始 -->
+        <h1>三角関数</h1>
         <img src="assets/images/Trigonometric-function.gif">
-        <p><a id="modal-close" class="button-link font-size__min">BACK</a></p>
+        <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
         <!-- モーダルウィンドウのコンテンツ終了 -->
       </div>
-      <!-- 4つ目のコンテンツ [終了] -->
+      <!-- 三角関数 [終了] -->
+
+      <!-- 三角関数について -->
+      <div id="modal-content-05" class="modal-content hide">
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <h1>三角関数とは</h1>
+        <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+        <!-- モーダルウィンドウのコンテンツ終了 -->
+      </div>
+      <!-- 三角関数 [終了] -->
+
+
     </section>
 
 
@@ -224,12 +239,35 @@
       <p class="content__dital--before font-size__small letter-space__medium">関数に数を与えると、未来がわかる。</p>
       <div class="function__line">
         <ul class="line__inner font-size__normal letter-space__medium">
-          <li class="contents__function"><a href="#">関数</a></li>
-          <li class="contents__differential"><a name="contents__differential" href="#function__link--about">関数のこと</a></li>
+          <li class="contents__function">
+            <a class="letter-space__medium modal-syncer" data-target="modal-content-06">関数</a>
+          </li>
+          <li class="contents__differential">
+            <a class="font-size__small letter-space__medium modal-syncer" data-target="modal-content-07">関数について</a>
+          </li>
         </ul>
       </div>
       <p class="content__dital--after font-size__small letter-space__medium">未来を予測できたら、きっと楽しいと思わない？</p>
     </div>
+
+    <!-- 関数 -->
+    <div id="modal-content-06" class="modal-content hide">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <h1>関数</h1>
+      <img src="assets/images/function.gif">
+      <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+    <!-- 三角関数 [終了] -->
+
+    <!-- 関数とは -->
+    <div id="modal-content-07" class="modal-content hide">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+    <!-- 三角関数 [終了] -->
+
 
   </section>
 
@@ -239,16 +277,16 @@
         <ul class="about__chance--menu letter-space__medium">
           <li class="chances__menu--chances font-size__small">
                 <div class="eff-6 hide"></div>
-                <a href="#">確率</a>
+                <a class="font-size__small letter-space__medium modal-syncer" data-target="modal-content-08">順列</a>
               </li>
           <li class="chances__mune--permutation font-size__small">
             <div class="eff-7 hide"></div>
-            <a  href="#">順列</a>
+            <a class="font-size__small letter-space__medium modal-syncer" data-target="modal-content-09">組み合わせ</a>
           </li>
 
           <li class="chances__mune--combination font-size__small">
             <div class="eff-8 hide"></div>
-            <a  href="#">組み合わせ</a>
+            <a class="font-size__small letter-space__medium modal-syncer" data-target="modal-content-10">確率</a>
           </li>
         </ul>
       </div>
@@ -260,6 +298,30 @@
         </div>
       </div>
     <img class="about__chances--bg hide" src="assets/images/dice.jpg">
+
+    <!-- 関数とは -->
+    <div id="modal-content-08" class="modal-content hide">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+    <!-- 三角関数 [終了] -->
+
+    <!-- 関数とは -->
+    <div id="modal-content-09" class="modal-content hide">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+    <!-- 三角関数 [終了] -->
+
+    <!-- 関数とは -->
+    <div id="modal-content-10" class="modal-content hide">
+      <!-- モーダルウィンドウのコンテンツ開始 -->
+      <p><a id="modal-close" class="button-link font-size__min letter-space__medium">BACK</a></p>
+      <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+    <!-- 三角関数 [終了] -->
   </section>
 
   <section id="about__footer">

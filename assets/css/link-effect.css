@@ -150,7 +150,6 @@ a:hover{
   height:40px;
   left:-150px;
   top: 0px;
-  right: 100%;
   background: #000;
   position:absolute;
   transition:all .5s ease;
@@ -211,7 +210,7 @@ a:hover{
 
 
 /*関数*/
-#about__function a{
+.function__contents a{
 	padding: 0 .3em;
 	background-image: linear-gradient(to right, rgba(0,0,0,0) 51%, #000 51%);
 	background-position: 0 0;
@@ -219,7 +218,7 @@ a:hover{
 	transition: .3s;
 }
 
-#about__function a:hover {
+.function__contents a:hover {
 	background-position: -100% 0;
 	color: #fff;
 }

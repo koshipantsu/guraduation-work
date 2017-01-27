@@ -64,3 +64,15 @@ $(function(){
 //   });
 // })
 // パララックスend
+
+// グローバルナヴィゲーションのスムーススクロール
+$(function(){
+  $('.header__main-menu a').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, 1000, "swing");
+    return false;
+  });
+});
